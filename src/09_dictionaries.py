@@ -45,4 +45,4 @@ waypoints[0] = {**waypoints[0], "name": "not a real place", "lon": -130}
 
 # Write a loop that prints out all the field values for all the waypoints
 for location in waypoints:
-    print([f"{i[0]}: {i[1]}" for i in location.items()])
+    print([f"{key}: {value}" for key, value in location.items()])
